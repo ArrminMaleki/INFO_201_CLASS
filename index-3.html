@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!-- This tells the browser the file is HTML. Every HTML page starts like this. -->
+<html lang="en">
+
+<head>
+  <!-- The <head> holds info ABOUT the page. Nothing in here shows up on the page itself. -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Armin Maleki | About Me</title>
+
+  <!-- ===================== CSS STARTS HERE =====================
+       CSS controls how the page LOOKS (colors, sizes, spacing).
+       Format:   selector { property: value; }
+       Try changing a color or size below, save, and refresh to see what happens! -->
+  <style>
+    /* "body" = the whole page */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f4f1fa;   /* light purple background */
+      color: #222222;              /* dark gray text */
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    /* "header" = the purple banner at the top */
+    header {
+      background-color: #4b2e83;   /* UW purple */
+      color: white;
+      text-align: center;
+      padding: 40px 16px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    header p {
+      margin: 8px 0 0;
+      color: #e8d9a0;              /* UW gold-ish */
+      font-size: 1.1em;
+    }
+
+    /* "main" = the area that holds all the sections */
+    main {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 0 16px;
+    }
+
+    /* "section" = each white card */
+    section {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px 25px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #4b2e83;
+      border-bottom: 2px solid #e8d9a0;
+      padding-bottom: 5px;
+    }
+
+    /* ".project" is a CLASS. It styles any element with class="project" */
+    .project {
+      margin-bottom: 12px;
+    }
+
+    .project strong {
+      color: #4b2e83;
+    }
+
+    footer {
+      text-align: center;
+      color: #777777;
+      font-size: 0.9em;
+      padding: 20px;
+    }
+  </style>
+  <!-- ===================== CSS ENDS HERE ===================== -->
+</head>
+
+<body>
+  <!-- The <body> holds everything you actually SEE on the page. -->
+
+  <header>
+    <!-- <h1> is the biggest heading. Use it once per page. -->
+    <h1>Armin Maleki</h1>
+    <p>Student at the University of Washington | INFO 201</p>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>About Me</h2>
+      <!-- <p> means paragraph. Replace the text below with a few sentences about yourself. -->
+      <p>
+        I'm a third-year student at the University of Washington in Seattle, studying Informatics.
+        I do a lot of vibe coding and LeetCode in my free time.
+      </p>
+    </section>
+
+    <section>
+      <h2>What I Worked On in INFO 201</h2>
+      <!-- Each <div class="project"> uses the .project style from the CSS above. -->
+      <div class="project">
+        <strong>UW Grade Distributions:</strong>
+        Compared grades across UW programs, class sizes, and quarters using R and ggplot2.
+      </div>
+      <div class="project">
+        <strong>Food Deserts:</strong>
+        Looked at grocery store access in King County, Washington vs. King County, Texas.
+      </div>
+      <div class="project">
+        <strong>Carbon Emissions:</strong>
+        Joined CO2 and global temperature data to see how both have changed since 1958.
+      </div>
+      <div class="project">
+        <strong>Group Project: EVs and Air Quality:</strong>
+        Explored whether states with more electric vehicles have cleaner air (2018-2023).
+      </div>
+    </section>
+
+    <section>
+      <h2>My Interests</h2>
+      <!-- <ul> is a bulleted list, and each <li> is one bullet. Add or remove bullets as you like. -->
+      <ul>
+        <li>Vibe coding</li>
+        <li>LeetCode</li>
+        <li>Data analysis with R</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Find Me</h2>
+      <!-- <a href="..."> makes a link. Replace the link with your real GitHub page. -->
+      <p>
+        GitHub: <a href="https://github.com/ArrminMaleki">github.com/ArrminMaleki</a>
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    Made by Armin Maleki for INFO 201
+  </footer>
+
+</body>
+</html>
